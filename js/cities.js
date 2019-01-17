@@ -3,7 +3,7 @@
 // });
 
 $(document).ready(() => {
-    let list = 'russian-cities.json';
+    let list = 'https://raw.githubusercontent.com/APushkin08/bazar/master/json/russian-cities.json';
     fetch(list)
         .then(result => result.json())
         .then(data => {
