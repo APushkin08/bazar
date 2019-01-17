@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bazzar</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="header-top-lang">
+                    <div class="header-top-left">
+                        <select name="lang" class="select-lang" id="select-style">
+                            <option value="eng">Eng</option>
+                            <option value="rus">Rus</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header-top-reg">
+                    <div class="btn-reg"><img src="./img/Btn-login.png" alt="photo-login">
+                        <p>LOGIN</p>
+                    </div>
+                    <div class="btn-log"><img src="./img/Btn-reg.png" alt="photo-registration">
+                        <p>REGISTRATION</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="header-center-number">
+                    <div class="img-number"><img src="./img/tel.png" alt="photo-telephone">
+                        <p class='header-number'>8 (999) 999-99-99</p>
+                    </div>
+                </div>
+                <div class="header-center-logo">
+                    <div class="logo-img"><img src="./img/Logo.png" alt="photo-logo"></div>
+                </div>
+                <div class="header-center-cart">
+                    <div class="cart-img"><img src="./img/Cart.png" alt="photo-cart">
+                        <div class="count-item">12</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div id="header-bottom-search">
+                    <div class="header-select-bottom">
+                        <div class="header-kategory"><select name="city" id="city">KATEGORY</select></div>
+                        <div class="header-search">search</div>
+                    </div>
+                </div>
+                <div id="header-menu">menu</div>
+            </div>
+
+        </header>
+    <div class="wrapper">
+        <ul class="tab-wrap">
+            <li><a href="#one" class="tab active">Tab1</a></li>
+            <li><a href="#two" class="tab">Tab2</a></li>
+            <li><a href="#three" class="tab">Tab3</a></li>
+            <li><a href="#four" class="tab">Tab4</a></li>
+        </ul>
+        <div id="one" class="itemContent active">tab1</div>
+        <div id="two" class="itemContent">tab2</div>
+        <div id="three" class="itemContent">tab3</div>
+        <div id="four" class="itemContent">tab4</div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/menuItem.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/menuKarkas.js"></script>
+    <script src="./js/wrapper.js"></script>
+    <script src="./js/cities.js"></script>
+    
+</body>
+
+</html>

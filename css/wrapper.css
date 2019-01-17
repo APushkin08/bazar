@@ -1,0 +1,38 @@
+.tab-wrap{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+.tab{
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+    text-decoration: none;
+    transition: all ease-in-out .4s;
+    color: black;
+}
+
+.wrapper{
+    max-width: 700px;
+    padding: 30px;
+}
+
+.itemContent{
+    display: none;
+    padding: 20px;
+    border: 1px solid silver;
+    background: #f4f5f7;
+    color: black;
+}
+
+.itemContent.active{
+    display: block;
+}
+
+.tab.active, .tab:hover{
+    background: #f4f5f7;
+    color: black;
+}
