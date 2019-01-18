@@ -42,3 +42,9 @@
 .circles{
     display: flex;
 }
+.circle-content{
+    display: none;
+}
+.circle-content.active{
+    display: block;
+}

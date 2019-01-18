@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <title>Bazar</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="./js/menuItem.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/menuKarkas.js"></script>
     <script src="./js/wrapper.js"></script>
     <script src="./js/cities.js"></script>
+    <script src="./js/circle.js"></script>
 </head>
 
 <body>
@@ -73,17 +75,19 @@
         <main class="container">
             <div class="deals">
                 <div class="hot-deals">
-                    <div class="deals-wrapp">
+
+                    <div class="deals-wrapp ">
                         <div class="hot-deals-text"><h2>HOT DEALS</h2></div>
                         <div class="circles">
-                            <div class="hot-deals-circles circle"></div>
-                            <div class="hot-deals-circles circle"></div>
-                            <div class="hot-deals-circles circle"></div>
+                            <div class="hot-deals-circles circle active"><a href="#"></a></div>
+                            <div class="hot-deals-circles circle"><a href="#"></a></div>
+                            <div class="hot-deals-circles circle"><a href="#"></a></div>
                         </div>
                     </div>
-                    <div id="one" class="circle-content active">circle1</div>
-                    <div id="two" class="circle-content">circle2</div>
-                    <div id="three" class="circle-content">circle3</div>
+
+                    <div id="circle-one" class="circle-content active">tab1</div>
+                    <div id="circle-two" class="circle-content">tab2</div>
+                    <div id="circle-three" class="circle-content">tab3</div>
                 </div>
                 <div class="sales">sales</div>
             </div>
