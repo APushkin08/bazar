@@ -1,0 +1,44 @@
+.deals{
+    display: flex;
+}
+.hot-deals{
+    width: calc(100%/3);
+    background: silver;
+    height: 500px;
+    margin: 0 15px 15px 15px;
+
+}
+.sales{
+    width: calc(2*100%/3);
+    background: gray;
+    margin: 0 15px 15px 15px;
+}
+.deals-wrapp{
+    height: 50px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-family: 'serif', Poppins-SemiBold;
+    display: flex;
+    justify-content: space-between;
+}
+.hot-deals-circles{
+    width: 25px;
+    margin: 0 3px;
+    background: silver;
+    border-radius: 50%;
+}
+.hot-deals-circles:hover{
+    background: #d58e35;
+
+}
+.hot-deals-circles::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+}
+.circles{
+    display: flex;
+}
