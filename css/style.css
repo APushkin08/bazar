@@ -187,16 +187,14 @@ option:hover{
     margin: 0 auto;
     display: flex;
 }
-.header-kategory{
-    width: 210px;
-}
 .header-search{
     padding: 10px;
-    margin-left: 3%;
     outline: none;
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    border-right: none;
+
 }
 .btn-search{
     display: flex;
@@ -213,6 +211,7 @@ option:hover{
 #city{
     padding: 10px;
     outline: none;
+    height: 16px;
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
