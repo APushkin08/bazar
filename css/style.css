@@ -5,12 +5,22 @@
 }
 body{
 }
-.container{
-    width: 80%;
+.content{
+    
     background: white;
     margin: 0 auto;
 }
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.header-top-container{
+    width: 100%;
+    background-color: #434343;
+}
 .header-top{
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     height: 55px;
     align-items: center;
@@ -57,7 +67,13 @@ body{
 .header-top-left{
     margin-left: 10px;
 }
+.header-center-container{
+    width: 100%;
+    background-color: #363636;
+}
 .header-center{
+    width: 80%;
+    margin: 0 auto;
     background-color: #363636;
     height: 145px;
     display: flex;
@@ -106,13 +122,22 @@ body{
     top: -37px;
     color: white;
 }
+.header-bottom-container{
+    width: 100%;
+    background-color: white;
+}
 .header-bottom{
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     height: 85px;
     background-color: white;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.51);
+    /* -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.51);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.51);
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.51);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.51); */
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.55);
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.55);
 }
 #header-bottom-search{
     display: flex;
@@ -163,21 +188,32 @@ option:hover{
     display: flex;
 }
 .header-kategory{
-    border: 1px solid black;
     width: 210px;
 }
 .header-search{
+    padding: 10px;
+    margin-left: 3%;
+    outline: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.btn-search{
+    display: flex;
+    align-items: center;
+    padding: 10px;
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 10px;
-    width: 280px;
 }
 .header-select-bottom{
     display: flex;
     margin: 0 auto;
 }
 #city{
-    padding: 10px 93px;
+    padding: 10px;
     outline: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }
