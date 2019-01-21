@@ -9,12 +9,20 @@ $(document).ready(function slide() {
         $($(e.target).attr('href')).fadeIn(200);
     });
     var timerId = setInterval(function() {
-        console.log('MOZZZG');
-        
-      }, 2000);
+        $('#circle2').trigger('click');
+            console.log('MOZZZG');
+      }, 5000);
+    var timerId = setInterval(function() {
+        $('#circle3').trigger('click');
+            console.log('MOZZZG');
+      },10000);
+    var timerId = setInterval(function() {
+        $('#circle1').trigger('click');
+            console.log('MOZZZG');
+      }, 15000);
       
       setTimeout(function() {
         clearInterval(timerId);
         console.log('MOZZZG');
-      }, 15000);
+      }, 9000);
 });
