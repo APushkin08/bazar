@@ -6,11 +6,15 @@ $(document).ready(function slide() {
             .closest('.hot-deals')
             .find('.circle-content')
             .hide();
-        $($(e.target).attr('href')).fadeIn(800);
+        $($(e.target).attr('href')).fadeIn(200);
     });
-    // $('#circle-two').click(function () {
-    //     console.log('MOZZZZZG');
-    //     slide();
-    // })
-    // $('#circle-two').trigger('click');
+    var timerId = setInterval(function() {
+        console.log('MOZZZG');
+        
+      }, 2000);
+      
+      setTimeout(function() {
+        clearInterval(timerId);
+        console.log('MOZZZG');
+      }, 15000);
 });
