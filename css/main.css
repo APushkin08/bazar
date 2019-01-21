@@ -6,7 +6,7 @@
     background: silver;
     height: 500px;
     margin: 0 15px 15px 15px;
-
+    position: relative;
 }
 .sales{
     width: calc(2*100%/3);
@@ -34,17 +34,29 @@
     background: #d58e35;
 
 }
-.hot-deals-circles::before{
+/* .hot-deals-circles::before{
     content: "";
     display: inline-block;
     vertical-align: middle;
-}
+} */
 .circles{
     display: flex;
+}
+.circles>li, .circles>li>a{
+    text-decoration: none;
+    list-style-type: none;
+    color: silver;
+    padding: 0px 5px;
+}
+.circles>li>a:hover{
+   color:#d58e35;
 }
 .circle-content{
     display: none;
 }
 .circle-content.active{
     display: block;
+    position: absolute;
+    width: 100%;
+    height: 90%;
 }

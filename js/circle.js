@@ -4,10 +4,10 @@ $(document).ready(() => {
         e.preventDefault();
         $(e.target).closest('.circles').find('.circle.active').removeClass('active');
         $(e.target).addClass('active')
-            .closest('.deals-wrapp')
+            .closest('.hot-deals')
             .find('.circle-content')
             .hide();
-            $($(e.target).attr('class')).fadeIn(200);
+            $($(e.target).attr('href')).fadeIn(800);
     })
 })
 // $(document).ready(() => {
