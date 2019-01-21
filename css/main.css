@@ -32,7 +32,10 @@
 }
 .hot-deals-circles:hover{
     background: #d58e35;
-
+}
+.circle.active{
+    background-color: #d58e35;
+    color: #d58e35;
 }
 /* .hot-deals-circles::before{
     content: "";
@@ -50,6 +53,9 @@
 }
 .circles>li>a:hover{
    color:#d58e35;
+}
+a .active{
+    background-color: #d58e35;
 }
 .circle-content{
     display: none;
