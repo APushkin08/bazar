@@ -87,16 +87,26 @@ a .active{
 .btn-slider-left{
     width: calc(100%/2);
     height: 40px;
-    border: 1px solid silver;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #000;
+    border-right: 1px solid white;
+}
+.btn-slider-left:hover, .btn-slider-right:hover{
+    background-color: #d58e35;
 }
 .btn-slider-right{
     width: calc(100%/2);
     height: 40px;
-    border: 1px solid silver;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #000;
+}
+.fa-angle-left:before, .fa-angle-right:before{
+    color: #fff;
+}
+.slider-photo{
+    display: block;
 }
