@@ -1,7 +1,18 @@
 
 $(document).ready(function () {
+    let cflag = 2;
     $('.circles').on('click', '.circle:not(.active)', e => {
         // e.preventDefault();
+        switch ($(e.target).attr("id")){
+            case 'circle1': cflag = 1;
+            break;
+            case 'circle2': cflag = 2;
+            break;
+            case 'circle3': cflag = 3;
+            break;
+        }
+        $(e.target).attr("id")
+        
         $(e.target).closest('.circles')
             .find('.circle.active')
             .removeClass('active');
@@ -14,7 +25,7 @@ $(document).ready(function () {
         $($(e.target).attr('href')).fadeIn(200);
     });
 
-    let cflag = 2;
+
     let timerId = setInterval(() => {
         switch (cflag) {
             case 1: {
@@ -34,9 +45,9 @@ $(document).ready(function () {
             break;
             default: console.log('значение cflag\'a вне диапазона 1-3')
         }
-    }, 5000)
+    }, 1000)
 
-      setTimeout(function() {
-        clearInterval(timerId);
-      }, 60000);
+    //   setTimeout(function() {
+    //     clearInterval(timerId);
+    //   }, 60000);
 });
