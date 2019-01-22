@@ -7,11 +7,13 @@
     height: 500px;
     margin: 0 15px 15px 15px;
     position: relative;
+    overflow: hidden;
 }
 .sales{
     width: calc(2*100%/3);
     background: gray;
     margin: 0 15px 15px 15px;
+    position: relative;
 }
 .deals-wrapp{
     height: 50px;
@@ -72,4 +74,29 @@ a .active{
     border-radius: 48%;
     outline: none;
     border: 0;
+}
+.btn-slider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.btn-slider-left{
+    width: calc(100%/2);
+    height: 40px;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-slider-right{
+    width: calc(100%/2);
+    height: 40px;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
