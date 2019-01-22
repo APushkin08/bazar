@@ -1,4 +1,5 @@
-$(document).ready(function() {
+
+$(document).ready(function () {
     $('.circles').on('click', '.circle:not(.active)', e => {
         // e.preventDefault();
         $(e.target).closest('.circles')
@@ -13,20 +14,29 @@ $(document).ready(function() {
         $($(e.target).attr('href')).fadeIn(200);
     });
 
-    var timerId1 = setInterval(function() {
-        $('#circle2').trigger('click');
-      }, 5000);
+    let cflag = 2;
+    let timerId = setInterval(() => {
+        switch (cflag) {
+            case 1: {
+                $('#circle1').trigger('click');
+                cflag = 2;
+            };
+            break;
+            case 2: {
+                $('#circle2').trigger('click');
+                cflag = 3;
+            };
+            break;
+            case 3: {
+                $('#circle3').trigger('click');
+                cflag = 1;
+            };
+            break;
+            default: console.log('значение cflag\'a вне диапазона 1-3')
+        }
+    }, 5000)
 
-    var timerId2 = setInterval(function() {
-        $('#circle3').trigger('click');
-      },10000);
-
-    var timerId3 = setInterval(function() {
-        $('#circle1').trigger('click');
-      }, 15000);
-      
-    //   setTimeout(function() {
-    //     clearInterval(timerId);
-    //     console.log('MOZZZG');
-    //   }, 9000);
+      setTimeout(function() {
+        clearInterval(timerId);
+      }, 60000);
 });
