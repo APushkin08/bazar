@@ -22,7 +22,7 @@ $(document).ready(function () {
             .find('.circle-content')
             .hide();
 
-        $($(e.target).attr('href')).fadeIn(200);
+        $($(e.target).attr('href')).fadeIn(0);
     });
 
 
@@ -45,7 +45,7 @@ $(document).ready(function () {
             break;
             default: console.log('значение cflag\'a вне диапазона 1-3')
         }
-    }, 1000)
+    }, 2500)
 
     //   setTimeout(function() {
     //     clearInterval(timerId);

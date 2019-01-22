@@ -1,0 +1,10 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    width: 350px;
+    height: 410px;
+    background-color: silver;
+    margin: 15px;
+}

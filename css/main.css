@@ -8,6 +8,7 @@
     margin: 0 15px 15px 15px;
     position: relative;
     overflow: hidden;
+    background-color: #fff;
 }
 .sales{
     width: calc(2*100%/3);
@@ -68,13 +69,6 @@ a .active{
     width: 100%;
     height: 90%;
 }
-.button-circle{
-    width: 25px;
-    height: 25px;
-    border-radius: 48%;
-    outline: none;
-    border: 0;
-}
 .btn-slider{
     display: flex;
     align-items: center;
@@ -108,5 +102,19 @@ a .active{
     color: #fff;
 }
 .slider-photo{
+    display: block;
+}
+.btn-addToCart {
+    display: none;
+    position: absolute;
+    left: 198px;
+    bottom: 235px;
+    color: #fff;
+    padding: 5px 20px;
+    background: #000;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn-addToCart:hover{
     display: block;
 }
