@@ -84,7 +84,7 @@ a .active{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+    background-color: #363636;
     border-right: 1px solid white;
 }
 .btn-slider-left:hover, .btn-slider-right:hover{
@@ -96,7 +96,7 @@ a .active{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+    background-color: #363636;
 }
 .fa-angle-left:before, .fa-angle-right:before{
     color: #fff;

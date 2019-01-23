@@ -1,5 +1,6 @@
 @import "./wrapper.css";
 @import "./main.css";
+@import "./product.css";
 *{
     margin: 0;
     padding: 0;
